@@ -18,3 +18,17 @@ for (let i = 0; i < text.length; i++) {
 }
 Show("Have a good day.");
 
+function Show(text) {
+  let obj={};
+  for (const letter of text) {
+    if (obj[letter]==undefined) {
+     obj[letter] =1; 
+    }
+    else{
+      obj[letter]+=1;
+    }
+      
+  }
+ return obj;    
+}
+console.log(Show('Have a good day.')); 
